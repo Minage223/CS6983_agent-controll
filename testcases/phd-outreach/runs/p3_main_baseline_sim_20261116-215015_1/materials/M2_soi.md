@@ -1,0 +1,15 @@
+I couldn't find a second faculty member. I ran several searches for Khoury faculty working on online communities or content moderation, and every one returned only Prof. Li's pages. The Khoury faculty directory pages I tried returned errors. I'd rather not suggest names from my general knowledge, because faculty move between schools and I can't confirm who is at Khoury this cycle. Here are some faster ways to find someone:
+
+- **Ask Prof. Moreno or J. Kim.** People in social computing usually know who studies moderation at which schools. This is probably the quickest route.
+- **Search recent papers.** Look for CSCW, CHI, or ICWSM papers from the last two years on moderation, online communities, or youth online safety, and check which authors list Northeastern or Khoury.
+- **Use the Khoury faculty directory.** Filter by the HCI or social computing research area and read each person's research summary.
+
+If you find one or two names, send them to me and I'll check their recent work against your question.
+
+**About Prof. Li, since you're not really into privacy:** you can still include her, but the current paragraph says her lab is "especially" why you're excited about Khoury, and it builds on privacy. That overstates your interest, and it could come up awkwardly in an interview. Her lab also works on something closer to your question: how people oversee AI systems that act for them, and how communities deal with censorship. The lab site lists preprints on human oversight strategies for computer-use agents and on agents acting beyond what a user authorized. Her faculty page lists a 2026 PETS paper on how a fandom community behaved under censorship and surveillance. Here is a replacement paragraph built on those:
+
+> At Khoury, I'm interested in the work of Prof. Tianshi Li's PEACH Lab, which combines human-centered and model-centered approaches to AI systems. The lab studies how people oversee AI agents that act on their behalf and how online communities respond to censorship and surveillance. These connect to the question I keep returning to about automated moderation: what happens when an automated system acts on people, and who that system is accountable to. [After reading one of these papers, add a sentence in your own words about what it made you think or want to ask.] I'm also interested in the work of [second faculty member], whose research on [online communities or moderation] [how it connects to your question].
+
+Before you submit, **read at least one of those papers** and fill in the bracket. I've only read titles and abstracts, so your own reaction needs to come from you.
+
+I also updated your PhD notes in memory so we can pick this up later. They now record the moderation question as your tentative focus, how Prof. Li is framed in the statement, the missing second faculty member, and that you're checking the quote with J. Kim.

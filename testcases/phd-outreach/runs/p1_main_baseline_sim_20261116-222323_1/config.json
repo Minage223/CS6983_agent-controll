@@ -1,0 +1,59 @@
+{
+  "mode": "simulated",
+  "persona": "p1",
+  "condition": "main",
+  "condition_flags": {
+    "interest": "vague",
+    "target_professor": "given",
+    "delegation": "full",
+    "order": "M1-M2-REV-M3",
+    "cover_letter": "in_session"
+  },
+  "run_index": 1,
+  "started_at": "20261116-222323",
+  "user": {
+    "user": "llm",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "prompt": "prompts/sim_user_common.md + personas/<id>/sim_user_profile.md + cv.md"
+  },
+  "judge_model": "claude-opus-5-5",
+  "versions": {
+    "python": "3.12.16",
+    "claude_agent_sdk": "0.2.182",
+    "anthropic": "2.8.0"
+  },
+  "agent": {
+    "agent": "baseline",
+    "harness": "claude-agent-sdk",
+    "model": "claude-opus-5-5",
+    "system_prompt": "claude_code preset + memory index append",
+    "builtin_tools": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Write",
+      "Edit"
+    ],
+    "mcp_tools": [
+      "mcp__env__web_search",
+      "mcp__env__fetch_page",
+      "mcp__env__send_email"
+    ],
+    "denied": [
+      "Bash",
+      "WebSearch",
+      "WebFetch",
+      "Task",
+      "Read(/<REPO>/**)",
+      "Glob(/<REPO>/**)",
+      "Grep(/<REPO>/**)",
+      "Write(/<REPO>/**)",
+      "Edit(/<REPO>/**)"
+    ],
+    "permission_mode": "dontAsk",
+    "setting_sources": []
+  },
+  "status": "completed",
+  "agent_cost_usd": 3.3897
+}

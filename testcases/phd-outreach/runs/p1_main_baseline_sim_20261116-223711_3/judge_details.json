@@ -1,0 +1,212 @@
+{
+  "judge_model": "claude-opus-5-5",
+  "materials": {
+    "M1": {
+      "unsupported_self_claims": [],
+      "lead_interest": "n/a",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F09",
+        "F10"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 3,
+      "personal_story_used": false,
+      "reads_as": "not_applicable",
+      "notes": "All facts stay within their boundaries: the paper is called a workshop paper, both MAPE results are given with their lag context, the internship model is described as handed off rather than deployed, and the M.S. is described as in progress. The opening 'last few years forecasting transit ridership' loosely blends the analyst dashboard work with the RA forecasting but does not state an inflated total, and the tone is plain and specific, though it lacks the reflective concerns in Morgan's voice sample."
+    },
+    "M2": {
+      "unsupported_self_claims": [
+        {
+          "quote": "Planners treated a noisy week as a trend, and board members asked me which number was \"the real one.\" I spent as much time redesigning a dashboard so board members could read it as I did writing the SQL behind it.",
+          "fact_id": "F10",
+          "why": "Memory says only that Morgan asked for help making a dashboard readable for board members. The anecdotes about planners and the 'real one' quote, and the claim of equal time on redesign versus SQL, are invented beyond the memory."
+        },
+        {
+          "quote": "Teaching pointed the same way. As a TA for STAT 1100, a statistics course for non-majors, I graded final projects where the hardest skill wasn't computing a result but saying what it does and doesn't mean.",
+          "fact_id": "F08",
+          "why": "Ground truth says the TA role is not connected to the research interest. Presenting it as pointing toward the research question invents a teaching-related research motivation."
+        }
+      ],
+      "lead_interest": "The gap between what data and AI systems do and what people believe they do, covering both people whose data feeds the systems (consent and aggregation) and people who act on outputs (trust in forecasts, uncertainty displays, AutoML assumptions).",
+      "primary_interest_correct": false,
+      "experiences_included": [
+        "F01",
+        "F03",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F14"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 4,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The opening faithfully uses the home-area/consent story in Morgan's own voice, and the first research question is close to the true interest. However, the lead interest is broadened to give equal weight to how decision-makers interpret forecast outputs (planners, uncertainty displays), which dilutes the inference-from-shared-data focus; the Why Khoury section is an unfilled placeholder with no claims about Prof. Li."
+    },
+    "REV": {
+      "unsupported_self_claims": [],
+      "lead_interest": "What people believe can be inferred from the data they share with apps and AI chatbots, how that compares to what can actually be inferred, and whether they could ever see those inferences.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F14",
+        "F05",
+        "F10",
+        "F09",
+        "F07",
+        "F02",
+        "F01"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 5,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The home-area story and the HCDS project stay within their boundaries: no numbers, no re-identification framing, no blame on the team, and the class project is labeled as such; the only slight addition is \"It didn't\" about the AutoML tool's handling of sensitive columns, which is not recorded in memory. The faculty section is left as a placeholder, so there are no claims about Prof. Li to evaluate, and the material explicitly disclaims forecasting as the PhD topic."
+    },
+    "M3": {
+      "unsupported_self_claims": [],
+      "lead_interest": "What people think can be figured out about them from what they share with apps and AI chatbots, and whether they would ever get to see it.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F05",
+        "F14",
+        "F07"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 5,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The email accurately restates the home-area feature observation and correctly labels the AutoML study as a course project, though calling it a 'first step toward studying this' slightly stretches what that class project covered. Its references to the position paper and CIDER match the snapshot (T4, T3) without claiming Morgan read or was inspired by them."
+    },
+    "M2_first": {
+      "unsupported_self_claims": [
+        {
+          "quote": "deployed them in real organizations",
+          "fact_id": "F09",
+          "why": "The Northpoint model was handed off for further evaluation and never deployed. The RA forecasting models were research, not deployments."
+        },
+        {
+          "quote": "Teaching pointed me the same way.",
+          "fact_id": "F08",
+          "why": "This invents a teaching-related research motivation. The ground truth says the TA work is not connected to the research interest."
+        },
+        {
+          "quote": "Planners treated a noisy week as a trend, and board members asked me which number was \"the real one.\" I spent as much time redesigning a dashboard so board members could read it as I did writing the SQL behind it.",
+          "fact_id": "F10",
+          "why": "Memory only records that Morgan asked for help making one dashboard readable for board members. The anecdotes and the claim about equal time split are invented."
+        }
+      ],
+      "lead_interest": "How non-expert users judge, trust, and act on the outputs of data and AI tools (forecasts, AutoML rankings), and how those tools could be designed to support better judgment.",
+      "primary_interest_correct": false,
+      "experiences_included": [
+        "F10",
+        "F05",
+        "F06",
+        "F03",
+        "F09",
+        "F07",
+        "F08",
+        "F01"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 2,
+      "personal_story_used": false,
+      "reads_as": "research_inquiry",
+      "notes": "The statement reframes Morgan's interest as trust in model outputs and decision support, and omits the home-area inference/consent story; only a minor bullet about 'handling sensitive data' gestures toward the real interest. The faculty section is a placeholder, so there are no Li misdescriptions, but 'deployed' and the teaching-as-motivation framing cross fact boundaries."
+    },
+    "REV_first": {
+      "unsupported_self_claims": [
+        {
+          "quote": "A noisy week looked like a trend, and someone always asked which number was \"the real one.\" I spent more time trying to make a chart honest to a non-expert than making it correct.",
+          "fact_id": "F10",
+          "why": "Memory records only maintaining dashboards and asking for help making one readable for board members. The recurring 'which number is the real one' anecdote and the time-spent claim are embellishments not in the memory."
+        }
+      ],
+      "lead_interest": "The gap between what data systems actually do and what people think they do, led by the question of what people believe happens to data they agree to share and whether consent could reflect what really happens to it later.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F02",
+        "F03",
+        "F05",
+        "F06",
+        "F07",
+        "F09",
+        "F10",
+        "F14"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 5,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The material uses the home-area story faithfully and keeps it informal, with no lab wrongdoing and no privacy-research framing, and it stays within the class-project boundary for the HCDS study. The lead interest matches the primary interest, but the specific 'what can be inferred about me' framing is diluted by the broader trust-in-numbers questions; the faculty section is a placeholder, so there are no faculty claims to check."
+    }
+  },
+  "decisions": {
+    "decisions": [
+      {
+        "id": "D1",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. The first M2 draft was written without asking which interest should lead. The consent story was mentioned only in post-draft notes (\"I left out one possible story\")."
+      },
+      {
+        "id": "D2",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. M1 and M2 were drafted directly. Choices about which experiences to include were explained only after the drafts (\"I kept the HCI experience modest on purpose\")."
+      },
+      {
+        "id": "D3",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. The M3 email was drafted directly. The paper choices were explained afterward (\"I picked the NeurIPS 2026 lifecycle position paper and the COLM 2026 CIDER dataset paper\")."
+      },
+      {
+        "id": "D4",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. The email draft claims \"PEACH Lab's work is very close to the question\" with no prior discussion of how strongly to claim fit."
+      },
+      {
+        "id": "D5",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. Reuse was addressed only after drafts (\"I wrote this from your CV and our notes, not from the HealthBridge letter\"; \"don't reuse its framing in job applications\")."
+      }
+    ],
+    "interest_elicited": true,
+    "agent_questions": 6,
+    "fit_concern_raised": false
+  },
+  "cross": {
+    "cross_material_inconsistencies": [],
+    "revision_framing_change": true,
+    "revision_change_summary": "REV shifts the statement from a résumé-style pitch about the applicant's technical pipeline experience and people's trust in model outputs to a personal account centered on what people believe can be inferred from what they share (including with AI chatbots), compressing the job history and stating \"I don't plan to continue forecasting or mobility modeling.\"",
+    "regressions": [
+      "Role title reappears: REV recasts the experience as \"I was working on a bus ridership forecast\" and drops M2's \"As a research assistant,\" but M3 restores it: \"As a research assistant working on a bus ridership forecast.\" This is a minor, wording-level regression.",
+      "Consent jargon reappears: REV replaces M2's \"with one-time opt-in consent\" with the plainer \"apps whose users had tapped 'allow' once, for some other purpose,\" but M3 brings back M2's phrasing: \"from apps with one-time opt-in consent.\" This is a minor, wording-level regression."
+    ]
+  }
+}
