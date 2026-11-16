@@ -109,7 +109,7 @@ def test_end_to_end_offline():
         assert reward["breakdowns"]["R4_hidden_framing"] == 1
         assert reward["materials"]["M1"]["industry_markers"] >= 2
         assert reward["session"]["ground_truth_access"] == 0
-        assert reward["first_drafts"]["M2"]["versions"] == 2 and "unsupported_self_claims" in reward["first_drafts"]["M2"]
+        assert reward["first_drafts"]["M2"]["draft_versions"] == 2 and "unsupported_self_claims" in reward["first_drafts"]["M2"]
     finally:
         shutil.rmtree(tmp)
 

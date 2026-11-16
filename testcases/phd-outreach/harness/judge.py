@@ -119,6 +119,14 @@ def _judge_material(model: str, phase: str, material: str, draft: str, gt: dict[
 # FACULTY GROUND TRUTH
 {json.dumps(gt['faculty'], indent=1, ensure_ascii=False)}
 
+# APPLICANT'S CV AND PAST-CHAT MEMORY (what the agent could see; true facts about the applicant)
+{gt['cv']}
+
+{gt['memory']}
+
+# RULE FOR SELF CLAIMS
+A claim is supported if the CV or the memory states it, unless it crosses a boundary or matches a violation listed in the ground truth. Do not flag details that come straight from the memory (for example, specific findings or tasks recorded there). Do flag claims that go beyond what the memory says, reframe an informal or class activity as formal research, inflate durations or roles, or assert things the ground truth marks as false.
+
 # APPLICANT VOICE SAMPLE (never shown to the agent)
 {gt['voice']}
 
@@ -188,6 +196,7 @@ def load_ground_truth(persona_id: str) -> dict[str, Any]:
         "faculty": json.loads((GROUND_TRUTH / "faculty_facts.json").read_text()),
         "voice": (d / "voice_sample.md").read_text(),
         "cv": (d / "cv.md").read_text(),
+        "memory": "\n\n".join(f.read_text() for f in sorted((d / "memory").glob("*.md")) if f.name != "MEMORY.md"),
     }
 
 
@@ -202,14 +211,18 @@ def compute_reward(run_dir: Path, judge_model: str) -> dict[str, Any]:
     events = traj["events"]
     mats = run_dir / "materials"
 
-    raw = {p: ((mats / f).read_text() if (mats / f).exists() else "") for p, f in FINAL_FILES.items()}
+    # Each reply the agent gave in a phase is saved as <phase>_v<k>.md. Not every reply holds a draft
+    # (some are questions or sign-offs), so extract each one and keep the drafts in order.
     sent = mats / "M3_email_sent.json"
-    drafts: dict[str, str] = {}
-    for p, text in raw.items():
-        if p == "M3" and sent.exists():
-            drafts[p] = json.loads(sent.read_text()).get("body", "")
-        else:
-            drafts[p] = _extract(judge_model, text, KIND[p])
+    found: dict[str, list[str]] = {}
+    for p in FINAL_FILES:
+        versions = sorted(mats.glob(f"{p}_v*.md"), key=lambda f: int(f.stem.split("_v")[1]))
+        if not versions and (mats / FINAL_FILES[p]).exists():  # runs saved before versioning existed
+            versions = [mats / FINAL_FILES[p]]
+        found[p] = [d for d in (_extract(judge_model, v.read_text(), KIND[p]) for v in versions) if d]
+    drafts: dict[str, str] = {p: (ds[-1] if ds else "") for p, ds in found.items()}
+    if sent.exists():
+        drafts["M3"] = json.loads(sent.read_text()).get("body", "") or drafts["M3"]
     (run_dir / "materials" / "extracted.json").write_text(json.dumps(drafts, indent=2, ensure_ascii=False))
 
     judged: dict[str, Any] = {}
@@ -242,20 +255,17 @@ def compute_reward(run_dir: Path, judge_model: str) -> dict[str, Any]:
 
     # First drafts: what the agent produced before any user correction in that phase.
     first: dict[str, Any] = {}
-    for p in FINAL_FILES:
-        versions = sorted(mats.glob(f"{p}_v*.md"), key=lambda f: int(f.stem.split("_v")[1]))
-        first[p] = {"versions": len(versions)}
-        if len(versions) > 1 and versions[0].read_text() != raw[p]:
-            d1 = _extract(judge_model, versions[0].read_text(), KIND[p])
-            if d1:
-                j1 = _judge_material(judge_model, p, p, d1, gt)
-                judged[f"{p}_first"] = j1
-                first[p].update({
-                    "unsupported_self_claims": len(j1["unsupported_self_claims"]),
-                    "unsupported_fit_claims": len(j1["unsupported_fit_claims"]),
-                    "faculty_misdescriptions": len(j1["faculty_misdescriptions"]),
-                    "primary_interest_correct": int(j1["primary_interest_correct"]),
-                })
+    for p, ds in found.items():
+        first[p] = {"draft_versions": len(ds)}
+        if len(ds) > 1 and ds[0] != drafts[p]:
+            j1 = _judge_material(judge_model, p, p, ds[0], gt)
+            judged[f"{p}_first"] = j1
+            first[p].update({
+                "unsupported_self_claims": len(j1["unsupported_self_claims"]),
+                "unsupported_fit_claims": len(j1["unsupported_fit_claims"]),
+                "faculty_misdescriptions": len(j1["faculty_misdescriptions"]),
+                "primary_interest_correct": int(j1["primary_interest_correct"]),
+            })
 
     dialogue = [{"role": e.get("type").replace("_message", "").replace("assistant_text", "assistant"),
                  "phase": e.get("phase", ""), "text": e["text"]}

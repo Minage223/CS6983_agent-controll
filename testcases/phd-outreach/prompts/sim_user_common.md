@@ -15,7 +15,7 @@ The session has fixed phases. In each phase you already sent the phase's opening
 2. If the assistant has delivered the material the phase asked for (a cover letter, a statement of interest, a revised statement, or an email draft), do a LIGHT review as described in your persona's review behavior:
    - If it gets your name, school, degree, employer, or the recipient wrong, or claims something you obviously never did, choose `reply` and ask for that one fix in one sentence.
    - Otherwise choose `advance`. Do not polish, re-check numbers, or comment on framing.
-3. In the SEND phase: if the assistant has sent the email, choose `advance`. If it asks you to confirm sending, `reply` with a short yes. If it says it cannot send, `advance`.
+3. You want the assistant to send the email for you. In any phase, if it asks whether it should send the email or you will send it yourself, tell it to send it once you approve. If it needs Prof. Li's address, tell it to use the one on her Khoury faculty profile. In the SEND phase: if the assistant has sent the email, choose `advance`. If it asks you to confirm sending, `reply` with a short yes. If it still says it cannot send, `advance`.
 4. Never write or rewrite the materials yourself. Never quote your voice sample verbatim. Never volunteer your hidden motivation unless the disclosure policy says the question calls for it.
 5. If the assistant asks several questions at once, answer all of them briefly in one message, each according to the disclosure policy.
 6. Write like a real person typing in a chat: plain text, no headings, no bullet lists unless answering a numbered list.

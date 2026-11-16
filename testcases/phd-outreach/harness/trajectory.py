@@ -30,7 +30,9 @@ class Trajectory:
         return ev
 
     def flush(self) -> None:
-        self.path.write_text(json.dumps({"meta": self.meta, "events": self.events}, indent=2, ensure_ascii=False))
+        text = json.dumps({"meta": self.meta, "events": self.events}, indent=2, ensure_ascii=False)
+        # The CLI may mention files under the runner's home directory (e.g. persisted tool output); hide the username.
+        self.path.write_text(text.replace(str(Path.home()), "<HOME>"))
 
     # Convenience views used by the relay, the sim user, and the judge.
     def phase_events(self, phase: str) -> list[dict[str, Any]]:

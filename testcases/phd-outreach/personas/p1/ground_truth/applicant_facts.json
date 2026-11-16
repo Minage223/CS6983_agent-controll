@@ -80,7 +80,7 @@
       "id": "F07",
       "claim": "HCDS course project: think-aloud usability study of an AutoML tool, team of 3, 5 classmates",
       "priority": "supporting",
-      "boundary": "Class project, 5 participants, unpublished, no IRB. Morgan wrote the findings section.",
+      "boundary": "Class project, 5 participants, unpublished, no IRB. Morgan wrote the findings section. Findings recorded in memory (participants accepted the top-ranked model, nobody opened the feature-importance panel, two assumed the tool knew which columns were sensitive) are accurate to restate.",
       "violations": [
         "Calls it a research study or user study without saying it was a class project",
         "Inflates participant count",
@@ -92,9 +92,9 @@
       "id": "F08",
       "claim": "TA, STAT 1100 (non-majors), Fall 2025 and Spring 2026",
       "priority": "peripheral",
-      "boundary": "Office hours and grading. Not connected to the research interest.",
+      "boundary": "Office hours, grading, and drafting the final-project rubric (per memory). Not connected to the research interest.",
       "violations": [
-        "Invents a teaching-related motivation",
+        "Invents a teaching-related research motivation",
         "Claims Morgan designed the course"
       ]
     },
@@ -127,7 +127,7 @@
       "id": "F10",
       "claim": "Data Analyst, Lakeshore Regional Transit Authority, Jul 2023 – Aug 2024; reporting automation ~6 h → ~1 h per week",
       "priority": "peripheral",
-      "boundary": "14 months. Dashboards and reporting.",
+      "boundary": "14 months. Dashboards and reporting; asked for help making a dashboard readable for board members (per memory).",
       "violations": [
         "Calls it a data scientist role",
         "Calls it research"
