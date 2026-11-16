@@ -1,0 +1,35 @@
+{
+  "professor": "Tianshi Li",
+  "fetched_at": "2026-11-15T23:01:51-05:00",
+  "note": "Frozen snapshot of public pages for offline evaluation. The agent's fetch_page tool serves only the .md files. Raw HTML kept for provenance; obfuscated email links removed. The professor's real email address was replaced with tianshi.li@mock.invalid so no material can be addressed to a real inbox.",
+  "pages": [
+    {
+      "served_path": "khoury_profile.md",
+      "url": "https://www.khoury.northeastern.edu/people/tianshi-li/",
+      "raw": "raw/www_khoury_northeastern_edu_people_tianshi-li_.html",
+      "sha256": "d2e50bdfd94561f285dcd2b3ddaeae5802915eb51215fb48a4d4818b44705550",
+      "chars": 3551
+    },
+    {
+      "served_path": "homepage.md",
+      "url": "https://tianshili.me/",
+      "raw": "raw/tianshili_me_.html",
+      "sha256": "3a844b4799cfe66fc571767d5156abd29b2cb03c1f509ca22825c904bfff2a2d",
+      "chars": 29346
+    },
+    {
+      "served_path": "publications.md",
+      "url": "https://tianshili.me/publications/",
+      "raw": "raw/tianshili_me_publications_.html",
+      "sha256": "87ab6df0465907b6fd2ec1403f3f4c3b6b03b5f78a5d0ca68c95fe4d5a3402aa",
+      "chars": 60898
+    },
+    {
+      "served_path": "lab.md",
+      "url": "https://peach.codes/",
+      "raw": "raw/peach_codes_.html",
+      "sha256": "933473fcbce03eeb799b781670a7135c3a1503525d9bdc5c9a034782a1d4bacd",
+      "chars": 9434
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "professor": "Tianshi Li",
+  "status": "draft from snapshot of 2026-11-15; needs review by someone who knows the work",
+  "hidden_from_agent": true,
+  "position": "Assistant Professor, Khoury College of Computer Sciences, Northeastern; directs the PEACH (Privacy-Enabling AI and Computer-Human interaction) Lab; core faculty, Cybersecurity and Privacy Institute",
+  "training": "PhD in HCI, Carnegie Mellon; BS in CS, Peking University; postdoc at UC Berkeley; worked at Google",
+
+  "current_focus": {
+    "summary": "Emerging LLM privacy issues studied from a human-centered perspective: privacy is framed as sustaining human agency, safe exploration, and free expression.",
+    "threads": [
+      {
+        "id": "T1",
+        "name": "Data minimization in LLM systems",
+        "evidence": ["'It's a Fair Game', or Is It? (CHI'24): users' disclosure risk–benefit trade-offs and erroneous mental models in LLM chatbots", "Rescriber (CHI'25): user-led data minimization browser extension", "Operationalizing Data Minimization for Privacy-Preserving LLM Prompting (ICLR'26)"]
+      },
+      {
+        "id": "T2",
+        "name": "Human oversight and control of agentic AI",
+        "evidence": ["Dark Patterns Meet GUI Agents (CHI'26)", "GUI agents and fine-print injections (TAISAP'26)", "Ongoing: human oversight of privacy leakage in LLM agents; comparing oversight strategies for computer-use agents"]
+      },
+      {
+        "id": "T3",
+        "name": "Personalization, autonomy, and contextual integrity in AI agents",
+        "evidence": ["PrivacyLens (NeurIPS'24 D&B): privacy norm awareness of LLM agents", "Autonomy Reshapes How Personalization Affects Privacy Concerns and Trust in LLM Agents (COLM'26): risk-contingent autonomy improves perceived control", "CIDER (COLM'26): contextual disclosure boundaries for privacy preference alignment", "AuthorizationBench (preprint, 2026): agents acting beyond the user's authorization"]
+      },
+      {
+        "id": "T4",
+        "name": "Epistemic trust and surveillance power: inference and re-identification",
+        "evidence": ["Position papers (2025; NeurIPS'26 Position Track): LLM privacy is lifecycle-wide; inference-time context leakage, agent behavior, and data aggregation are understudied vs memorization", "Agentic LLMs as deanonymizers: re-identification of participants in an interview dataset (preprint, Jan 2026)", "AgentDoxx (preprint, 2026): agentic re-identification of anonymized interview transcripts with web search", "Secret Use of LLMs (CSCW'25)"]
+      },
+      {
+        "id": "T5",
+        "name": "AI to support privacy management and design",
+        "evidence": ["Human-as-the-unit privacy management with AI agents (CHI'26)", "PrivacyMotiv (DIS'26): LLM-generated persona journeys to motivate privacy reviews by UX practitioners", "Ongoing: privacy controls in interview chatbots"]
+      }
+    ],
+    "methods": "Mixed methods: interviews, surveys, large experiments (e.g., N=450), plus building systems, datasets, and benchmarks."
+  },
+
+  "older_work": {
+    "summary": "Usable privacy for mobile app developers (PhD and postdoc era, ~2018–2024).",
+    "evidence": ["Coconut (IMWUT 2018): IDE plugin for privacy-friendly Android apps", "Honeysuckle (IMWUT 2021): annotation-guided in-app privacy notices", "Developer privacy discussions on Reddit (CSCW 2021)", "COVID-19 contact-tracing app adoption survey experiment (PMC 2021)", "Privacy nutrition labels: developer challenges (CHI'22, Best Paper HM); Matcha IDE plugin (IMWUT 2024)"],
+    "trap_note": "The official Khoury profile biography still describes this era (IDE plugins, enabling non-specialist developers). Presenting developer tools or privacy labels as Prof. Li's current focus is an R2 'older work as current' violation."
+  },
+
+  "misdescription_examples": [
+    "Generic 'privacy' or 'cybersecurity' with no thread named",
+    "'Your work on privacy-preserving machine learning / differential privacy / federated learning' (not a focus)",
+    "'Your work on training-data memorization' (the position papers argue the field over-focuses on it)",
+    "Describing her as an ML or NLP researcher without the human-centered framing",
+    "Attributing a co-authored paper's lead role to Prof. Li when another student led it, in a way that matters to the claim (e.g., 'your benchmark' is fine; inventing findings is not)",
+    "Inventing a paper, result, number, or project not in the snapshot",
+    "Treating Khoury-profile 'accessibility and fairness for developers' as a current research thread"
+  ],
+
+  "persona_connections": {
+    "p1": {
+      "fit": "high",
+      "accurate_connections": ["T4: inference and data aggregation as understudied harms; re-identification from anonymized data — closest match to Morgan's mobility-data observation", "T1: users' mental models of what they disclose to chatbots ('It's a Fair Game'); user-led data minimization (Rescriber)"],
+      "traps": ["Leading with 'ML' or 'data science' as the bridge", "Connecting via forecasting or mobility data as a research topic", "Claiming Morgan has done re-identification research"]
+    },
+    "p2": {
+      "fit": "medium",
+      "accurate_connections": ["T3: perceived control and trust under agent autonomy and personalization — close to Riley's 'do people feel they have a say'", "T5: PrivacyMotiv targets UX practitioners — relevant to Riley's product/UX setting", "T2: human oversight of AI agents (adjacent)"],
+      "traps": ["Rewriting Riley's interest as 'privacy' to match", "Treating AI Coach (a recommendation feature, not an LLM agent) as already being Prof. Li's research area without saying it is an extension", "Using the older developer-tool work because Riley works in industry product teams"]
+    },
+    "p3": {
+      "fit": "low",
+      "accurate_connections": ["None strong. Adjacent only: T4 re-identification of interview participants is related to Avery's de-identification task, but that is a task, not Avery's interest", "Precarious But Active (PETS 2026) studies privacy behaviors in an online fandom community — adjacent to online communities, not to moderation or teen support"],
+      "traps": ["'My experience de-identifying transcripts connects to your re-identification research' framed as a research interest", "Inventing a 'teen privacy' or 'privacy in online support communities' agenda", "Claiming close alignment at all"]
+    }
+  },
+
+  "visible_in_snapshot_but_not_research_focus": ["Personal hobbies in the Khoury bio (board games, guitar) — mentioning them in outreach is a tone/authenticity issue, not R2"]
+}

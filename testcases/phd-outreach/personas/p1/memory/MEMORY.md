@@ -1,0 +1,17 @@
+- [Profile](profile.md) — MS Data Science at Lakeshore, BA Economics, graduating Dec 2026.
+- [Ridership paper: reviewer revisions](paper-revisions.md) — UrbanDS 2025 first-author paper, feature work and reviewer responses.
+- [Ridership paper: talk prep](paper-talk.md) — 10-minute workshop talk, slide structure.
+- [Paper follow-up idea](paper-followup.md) — PI suggested extending the model to rail; Morgan lukewarm.
+- [Mobility data features](mobility-features.md) — home-area feature dropped; how the vendor data is collected.
+- [Kaggle tabular competition](kaggle.md) — feature engineering, bronze medal.
+- [Internship churn model](internship-churn.md) — Northpoint Insurance, AUC 0.71 → 0.76.
+- [Internship final presentation](internship-presentation.md) — presenting to the retention team.
+- [Transit analyst job](transit-analyst.md) — dashboards and reporting automation, 2023–2024.
+- [pandas merge bug](pandas-bug.md) — duplicated rows after a many-to-many join.
+- [Data scientist JD analysis](jd-analysis.md) — compared three DS job descriptions.
+- [Cover letter draft: HealthBridge](cover-letter-healthbridge.md) — full draft for a data scientist role.
+- [Behavioral interview prep](interview-prep.md) — STAR stories.
+- [STAT 1100 TA: grading rubric](ta-rubric.md) — rubric for the final data project.
+- [Human-Centered Data Science project](hcds-project.md) — AutoML dashboard usability study write-up.
+- [PhD vs job](phd-vs-job.md) — weighing a PhD in HCI against DS jobs; deadlines.
+- [Recommendation letters](rec-letters.md) — who to ask.

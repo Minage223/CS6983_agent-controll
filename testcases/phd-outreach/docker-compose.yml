@@ -1,0 +1,24 @@
+services:
+  testcase:
+    build: .
+    image: phd-outreach-testcase:latest
+    environment:
+      - ANTHROPIC_API_KEY   # passed through from your own shell; never stored in the repo
+    volumes:
+      - ./runs:/app/runs
+    stdin_open: true   # human mode reads from the terminal
+    tty: true
+  survey:
+    build: .
+    image: phd-outreach-testcase:latest
+    volumes:
+      - ./runs:/app/runs
+    stdin_open: true
+    tty: true
+    entrypoint: ["python", "-m", "harness.survey"]
+  cross:
+    build: .
+    image: phd-outreach-testcase:latest
+    volumes:
+      - ./runs:/app/runs
+    entrypoint: ["python", "-m", "harness.cross_persona"]

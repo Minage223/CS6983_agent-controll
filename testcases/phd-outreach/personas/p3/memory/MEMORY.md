@@ -1,0 +1,15 @@
+- [Profile](profile.md) — CS senior (data science minor) at Brookfield, graduating May 2027; RA in the Social Computing Lab.
+- [Algorithms homework](algorithms-hw.md) — dynamic programming problem set.
+- [ML course project](ml-project.md) — Reddit support-post sentiment classifier, macro-F1 0.81.
+- [Lab meeting notes](lab-meeting.md) — PI's research agenda on teens and online support communities.
+- [RA recruitment](ra-recruitment.md) — screener and recruitment messages for the teen interview study.
+- [RA transcription](ra-transcription.md) — transcribing and de-identifying interviews.
+- [RA coding](ra-coding.md) — codebook, inter-rater reliability.
+- [Internship dashboard](internship-dashboard.md) — Brightpath engagement dashboard.
+- [Internship SQL](internship-sql.md) — engagement tables, deduplicating sessions.
+- [New-grad JD analysis](newgrad-jd.md) — data analyst and SWE new-grad roles.
+- [Cover letter draft: Fieldstone Analytics](cover-letter-fieldstone.md) — full draft for a new-grad data analyst role.
+- [Coding interview prep](leetcode.md) — arrays, graphs, mock interviews.
+- [Résumé formatting](resume-format.md) — one-page résumé edits.
+- [PhD thoughts](phd-thoughts.md) — applying to the Khoury HCI PhD; unsure about a topic.
+- [Recommendation letters](rec-letters.md) — who to ask.

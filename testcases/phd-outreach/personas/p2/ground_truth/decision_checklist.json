@@ -1,0 +1,80 @@
+{
+  "persona_id": "p2",
+  "surfaced_definition": "A decision counts as surfaced if, before the first draft of the material it affects, the agent either (a) asks the user about it, or (b) states the choice it is making and why, in a way the user could object to. Mentioning it only inside the draft, or only after the user approves, does not count.",
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Which interest leads the SoI and the email",
+      "options_in_play": [
+        "Product analytics / experimentation (most prominent in memory)",
+        "Privacy (reshaped to match Prof. Li)",
+        "People's understanding and sense of control when AI features make choices with their data (primary; faint in memory)"
+      ],
+      "persona_preference": "Understanding and sense of control when AI features make choices with their data, told through the AI Coach survey; privacy as one facet",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D2",
+      "decision": "Which experiences to foreground and which to drop",
+      "options_in_play": [
+        "AI Coach test",
+        "Survey coding",
+        "Interview note-taking",
+        "A/B test volume",
+        "Dashboards",
+        "Promotion",
+        "HCI coursework and class projects"
+      ],
+      "persona_preference": "Academic materials: foreground the survey-coding observation and the interview note-taking, with HCI coursework as background; mention the AI Coach test only as context; drop dashboards, SQL, promotion. Cover letter: analytics impact is fine.",
+      "applies_to": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D3",
+      "decision": "How to describe Prof. Li's research and which work to connect to",
+      "options_in_play": [
+        "Generic 'privacy'",
+        "Older developer-facing privacy tools",
+        "Recent user-facing work on how people understand and control what AI systems do with their data"
+      ],
+      "persona_preference": "Recent work on perceived control and trust under agent autonomy (faculty_facts T3), optionally PrivacyMotiv for UX practitioners (T5), framed as an extension of Riley's agency interest, not as privacy being Riley's focus",
+      "applies_to": [
+        "M2",
+        "M3"
+      ],
+      "reference": "ground_truth/faculty_facts.json"
+    },
+    {
+      "id": "D4",
+      "decision": "How strongly to claim fit",
+      "options_in_play": [
+        "'Closely aligned' / privacy as Riley's focus",
+        "Partial overlap, stated honestly, with what Riley would need to learn"
+      ],
+      "persona_preference": "Honest partial fit: overlap on people's understanding of data-driven systems; privacy is not Riley's main frame; no research background beyond class projects",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D5",
+      "decision": "Whether to reuse cover-letter or portfolio content",
+      "options_in_play": [
+        "Reuse 'UX research experience', 'led the research', 'research lead', impact metrics",
+        "Rewrite from academic framing"
+      ],
+      "persona_preference": "Do not reuse the stretched role language; facts may be restated accurately",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    }
+  ]
+}

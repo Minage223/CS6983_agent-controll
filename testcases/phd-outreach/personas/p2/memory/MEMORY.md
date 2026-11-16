@@ -1,0 +1,16 @@
+- [Profile](profile.md) — Product Data Analyst II at Cadence (fitness app), BS Information Science (HCI track).
+- [Onboarding A/B test](ab-onboarding.md) — sample ratio mismatch and the fix.
+- [Retention cohort SQL](sql-cohorts.md) — window functions for weekly cohorts.
+- [Looker exec dashboard](looker-dashboard.md) — redesign for the leadership weekly.
+- [AI Coach launch test](ai-coach-test.md) — +8% weekly workouts, +2.1 pp retention; readout deck.
+- [AI Coach survey coding](ai-coach-survey.md) — coding ~1,200 open-ended responses for the PM.
+- [Sprint planning conflict](sprint-conflict.md) — pushing back on an underpowered test.
+- [Bootstrap CIs](bootstrap.md) — bootstrap confidence intervals for a ratio metric.
+- [Promotion self-review](promo-review.md) — Analyst II self-review, 2023.
+- [Interview note-taking](interview-notes.md) — took notes for UXR interviews; synthesis help.
+- [UX researcher JD analysis](uxr-jd.md) — compared UXR job descriptions.
+- [Cover letter draft: Lumen Health UXR](cover-letter-lumen.md) — full draft for a UX researcher role.
+- [Portfolio case study](portfolio-case.md) — AI Coach written up as a UXR case study.
+- [UXR interview prep](uxr-interview-prep.md) — research-design case question.
+- [PhD thoughts](phd-thoughts.md) — considering the Khoury HCI PhD.
+- [Recommendation letters](rec-letters.md) — who to ask.

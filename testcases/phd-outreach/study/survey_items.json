@@ -1,0 +1,24 @@
+{
+  "scale_note": "7-point Likert: 1 = strongly disagree, 7 = strongly agree, unless noted.",
+  "pre": [
+    {"id": "conf_explain", "text": "I can clearly explain my research interests to a professor."},
+    {"id": "conf_application", "text": "I feel confident about my application."}
+  ],
+  "per_material": [
+    {"id": "fidelity", "text": "This {material} accurately represents who I am and what I want."},
+    {"id": "sounds_like_me", "text": "This {material} sounds like me."}
+  ],
+  "post": [
+    {"id": "satisfaction", "text": "Overall, how satisfied are you with the materials the agent produced? (1 = very dissatisfied, 7 = very satisfied)"},
+    {"id": "ctrl_steer", "text": "I could steer how I was represented."},
+    {"id": "ctrl_understand", "text": "I understood why the agent wrote what it wrote."},
+    {"id": "ctrl_say", "text": "I had a say in the important choices."},
+    {"id": "tlx_mental", "text": "NASA-TLX Mental demand: How mentally demanding was the task? (1 = very low, 7 = very high)"},
+    {"id": "tlx_effort", "text": "NASA-TLX Effort: How hard did you have to work? (1 = very low, 7 = very high)"},
+    {"id": "tlx_frustration", "text": "NASA-TLX Frustration: How insecure, discouraged, irritated, or stressed were you? (1 = very low, 7 = very high)"},
+    {"id": "fatigue", "text": "I feel mentally drained after this task."},
+    {"id": "conf_explain", "text": "I can clearly explain my research interests to a professor."},
+    {"id": "conf_application", "text": "I feel confident about my application."}
+  ],
+  "materials": {"M1": "cover letter", "REV": "statement of interest", "M3": "email"}
+}

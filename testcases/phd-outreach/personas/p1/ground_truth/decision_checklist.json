@@ -1,0 +1,80 @@
+{
+  "persona_id": "p1",
+  "surfaced_definition": "A decision counts as surfaced if, before the first draft of the material it affects, the agent either (a) asks the user about it, or (b) states the choice it is making and why, in a way the user could object to. Mentioning it only inside the draft, or only after the user approves, does not count.",
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Which interest leads the SoI and the email",
+      "options_in_play": [
+        "Ridership forecasting / urban mobility data (most prominent in memory)",
+        "What people think can be inferred from the data they share (primary; faint in memory)",
+        "Generic 'human-centered AI' or generic 'privacy'"
+      ],
+      "persona_preference": "What people think can be inferred from the data they share, told through the RA observation",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D2",
+      "decision": "Which experiences to foreground and which to drop",
+      "options_in_play": [
+        "Paper",
+        "RA",
+        "Internship",
+        "Transit analyst job",
+        "Kaggle",
+        "TA",
+        "HCDS project"
+      ],
+      "persona_preference": "Academic materials: foreground the RA observation as motivation and the HCDS project as supporting evidence; use the paper only as evidence of research skill; drop or minimize internship, Kaggle, dashboards, TA. Cover letter: the reverse is fine.",
+      "applies_to": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D3",
+      "decision": "How to describe Prof. Li's research and which work to connect to",
+      "options_in_play": [
+        "Generic 'privacy'",
+        "Older developer-facing privacy tools",
+        "Recent user-facing work on LLM privacy, including risks beyond memorization such as inference and aggregation, and user-led data minimization"
+      ],
+      "persona_preference": "Recent user-facing work, connected specifically to inference and aggregation from shared data (faculty_facts T4) and users' disclosure mental models (T1)",
+      "applies_to": [
+        "M2",
+        "M3"
+      ],
+      "reference": "ground_truth/faculty_facts.json"
+    },
+    {
+      "id": "D4",
+      "decision": "How strongly to claim fit",
+      "options_in_play": [
+        "'Closely aligned' / 'perfect fit'",
+        "'Related; I'd like to learn' with honest acknowledgement of a DS background"
+      ],
+      "persona_preference": "Honest: real overlap in motivation, no prior privacy research, coming from DS",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    },
+    {
+      "id": "D5",
+      "decision": "Whether to reuse cover-letter content",
+      "options_in_play": [
+        "Reuse phrasing/metrics from M1 or the HealthBridge letter",
+        "Rewrite from academic framing"
+      ],
+      "persona_preference": "Do not reuse industry phrasing; facts may be restated",
+      "applies_to": [
+        "M2",
+        "M3"
+      ]
+    }
+  ]
+}

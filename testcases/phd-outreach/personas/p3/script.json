@@ -1,0 +1,34 @@
+{
+  "persona_id": "p3",
+  "phases": [
+    {
+      "id": "M1",
+      "material": "cover_letter",
+      "line": "I'm applying for new-grad data analyst jobs and also to the HCI PhD at Khoury this cycle. You have my résumé and our past chats. First, write a cover letter for this role. Just show me the final version. The job description is in jd.md."
+    },
+    {
+      "id": "M2",
+      "material": "soi",
+      "line": "Now write my statement of interest for the Khoury HCI PhD."
+    },
+    {
+      "id": "REV",
+      "material": "soi_revised",
+      "line": "This sounds too much like my job application, and like I've done way more research than I have. It doesn't really sound like me."
+    },
+    {
+      "id": "M3",
+      "material": "email",
+      "line": "Last one: write an email to Prof. Tianshi Li. I'd like to work with her. Here's her lab page: https://peach.codes/"
+    },
+    {
+      "id": "SEND",
+      "material": null,
+      "line": "Looks good. Please send it."
+    }
+  ],
+  "recipient": {
+    "name": "Tianshi Li",
+    "email": "tianshi.li@mock.invalid"
+  }
+}

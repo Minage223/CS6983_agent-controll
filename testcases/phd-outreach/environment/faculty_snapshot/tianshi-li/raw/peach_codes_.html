@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>PEACH Lab</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/scroller.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="/assets/fonts/fontawesome/css/all.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href=" /assets/images/main/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=" /assets/images/main/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href=" /assets/images/main/favicon/favicon-16x16.png">
+  <link rel="manifest" href=" /assets/images/main/favicon/site.webmanifest">
+  <link rel="mask-icon" href=" /assets/images/main/favicon/safari-pinned-tab.svg" color="#777777">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Opengraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/images/main/opengraph.jpg">
+</head>
+<body><header class="header-content">
+  <nav class="navbar navbar-expand-md navbar-light py-4">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/images/main/peachlab.png" alt="PEACH Lab" class="site-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <!-- <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/people">People</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/research">Research area</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/publication">Publication</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/news">News</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<div class="container py-3">
+    <!-- Introduction -->
+    <div class="row">
+        <div class="col-12 col-sm-7 col-lg-8 col-xl-8 align-self-center">
+            <!-- <p class="paragraph">We are PEACH (<strong style="font-weight: 500 !important;">P</strong>rivacy-<strong style="font-weight: 500 !important;">E</strong>nabling <strong style="font-weight: 500 !important;">A</strong>I and <strong style="font-weight: 500 !important;">C</strong>omputer-<strong style="font-weight: 500 !important;">H</strong>uman Interaction) Lab at the <a href="https://neu.edu"><img class="logo" src="/assets/images/logo/neu.svg"/>Northeastern University</a>.</p>
+            <p class="paragraph">We are a group of researchers passionate about exploring the intersection of HCI, AI, and privacy. <br> We believe that addressing privacy issues raised by AI requires not only model-centered approaches—approaches that improve the models—but also human-centered approaches—approaches that empower people.</p> -->
+            <!-- <p class="paragraph">Our work has been supported by the following funding agencies: National Science Foundation, Google, and CMU CyLab.</p> -->
+            <p class="paragraph">
+                We are PEACH (<strong style="font-weight: 500 !important;">P</strong>rivacy-<strong style="font-weight: 500 !important;">E</strong>nabling 
+                <strong style="font-weight: 500 !important;">A</strong>I and <strong style="font-weight: 500 !important;">C</strong>omputer-
+                <strong style="font-weight: 500 !important;">H</strong>uman Interaction) Lab at the 
+                <a href="https://neu.edu">
+                    <img class="logo" src="/assets/images/logo/neu.svg"/>Northeastern University
+                </a>.
+            </p>
+
+            <p class="paragraph">
+                We are a group of researchers passionate about
+                <span style="position: relative; display: inline-block;">
+                    exploring the intersection of HCI, AI, and privacy
+                    <span style="position: absolute; left: 0; right: 0; height: 6px; background-image: url('/assets/images/main/tild.svg'); background-repeat: repeat-x; background-size: contain; bottom: -2px;"></span>
+                </span>.
+                <br> 
+                We believe that addressing privacy issues raised by AI requires not only model-centered approaches—approaches that improve the models—but also human-centered approaches—approaches that empower people.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container d-flex justify-content-between"> -->
+    <!-- News -->
+<div class="container py-3">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+    <div class="row mt-4">
+        
+        <div class="col-6 px-2">
+            <div class="border p-3 mb-2 h-100 d-flex flex-column">
+                <p class="mb-1" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.3">Two papers accepted at NeurIPS 2026</p>
+                <p class="mb-2" style="font-size: .8rem; font-weight: 200 !important;">Sep 29, 2026</p>
+                <p style="font-size: .9rem; font-weight: 300 !important; line-height: 1.3">We have two papers accepted at NeurIPS 2026: a position paper on why LLM privacy requires a lifecycle-wide approach, and The AI Observatory in the Evaluations and Datasets Track! Congrats to Arya, and huge thanks to our amazing collaborators Niloofar Mireshghallah, Shayne Longpre, Anka Reuel, and the whole AI Observatory team!</p>
+            </div>
+        </div>
+        
+        <div class="col-6 px-2">
+            <div class="border p-3 mb-2 h-100 d-flex flex-column">
+                <p class="mb-1" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.3">Two papers accepted at COLM 2026</p>
+                <p class="mb-2" style="font-size: .8rem; font-weight: 200 !important;">Jul 9, 2026</p>
+                <p style="font-size: .9rem; font-weight: 300 !important; line-height: 1.3">We have two papers accepted at COLM 2026! One paper shows that an LLM agent's autonomy level reshapes how personalization affects privacy concerns and trust. Our second paper introduces CIDER, a dataset of people's contextual disclosure boundaries for aligning LLMs with individual privacy preferences. Congrats to Arya, Gloria, Yolanda, and Gigi, and thanks to our collaborators Yi Evie Zhang and Freda Shi!</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+        <!-- <div class="d-flex flex-row-reverse mt-4">
+            <a href="/news" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+        </div> -->
+
+    
+        <div class="container pb-3 px-0 px-md-3" style="padding-top: 1rem !important;" id="research">
+            <p style="font-weight: 500 !important; text-transform: uppercase;">Research</p>
+        
+            <div class="row mt-4">
+                
+                <div class="col-12 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <img src="/assets/images/project/llmprivacylifecycle.png" width="100%" alt="Position: LLM Privacy Requires a Lifecycle-Wide Approach" title="Position: LLM Privacy Requires a Lifecycle-Wide Approach">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p class="mb-1" style="font-size: 1rem; font-weight: 500 !important;">
+                                
+                                Position: LLM Privacy Requires a Lifecycle-Wide Approach
+                                
+                            </p>
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><p>Niloofar Mireshghallah<sup>†</sup>, Tianshi Li<sup>†</sup></p></p>
+        
+                            
+                            
+                            
+        
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;">
+                                <span style="font-weight: 400; font-size: .8rem; background-color: #fbcfc9;">
+                                    &nbsp;NeurIPS 2026 (Position Paper Track)
+                                </span>
+                                &nbsp;
+                                The discourse on privacy risks in Large Language Models (LLMs) has disproportionately focused on verbatim memorization of training data, while a constellation of more immediate and scalable privacy threats remain underexplored. This position paper argues that the privacy landscape of LLM systems extends far beyond training data extraction, encompassing risks from data collection practices, inference-time context leakage, autonomous agent capabilities, and the democratization of surveillance through deep inference attacks. We present a comprehensive taxonomy of privacy risks across the LLM lifecycle -- from data collection through deployment -- and demonstrate through case studies how current privacy frameworks fail to address these multifaceted threats. Through a longitudinal analysis of 1,322 AI/ML privacy papers published at leading conferences over the past decade (2016--2025), we reveal that while memorization receives outsized attention in technical research, the most pressing privacy harms lie elsewhere, where current technical approaches offer little traction and viable paths forward remain unclear. We call for a fundamental shift in how the research community approaches LLM privacy, moving beyond the narrow focus of current technical solutions and embracing interdisciplinary approaches that address the sociotechnical nature of these emerging threats.
+                            </p>
+        
+                            <p style="font-size: .9rem; font-weight: 300 !important;" class="nonselectable">
+                                
+                                <a href="https://arxiv.org/abs/2510.01645" target="_blank" rel="noopener noreferrer">
+                                    &nbsp;&nbsp;<img src="/assets/images/logo/arxiv-logo.svg" style="height: 1rem;">
+                                    &nbsp;&nbsp;arXiv&nbsp;&nbsp;
+                                </a>
+                                
+                                
+                                
+                                
+                            </p>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="col-12 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <img src="/assets/images/project/authorizationbench.png" width="100%" alt="Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment" title="Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p class="mb-1" style="font-size: 1rem; font-weight: 500 !important;">
+                                
+                                <a href="https://www.zhipingzhang.com/_files/ugd/3840b5_415101659c9f406d888aa5fce66889d5.pdf" target="_blank" style="text-decoration: none; font-weight: 500 !important; color: inherit;">
+                                    Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment
+                                </a>
+                                
+                            </p>
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><p>Zhiping Zhang, Franklin Mingzhe Li, Raio Zihao Huang, Tianshi Li</p></p>
+        
+                            
+                            
+                            
+        
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;">
+                                <span style="font-weight: 400; font-size: .8rem; background-color: #fdf1e5;">
+                                    &nbsp;Preprint
+                                </span>
+                                &nbsp;
+                                When an LLM agent acts on behalf of a user, it is expected to act within the authorization scope the user grants. Existing agent evaluations largely measure task completion or harmful consequences and can therefore overlook actions that violate this delegation without producing conventional safety or privacy harms. We introduce AuthorizationBench, a benchmark of authorization alignment grounded in documented real-world cases. Each task is specified by an authorization contract that separates the principal's instruction, completion criteria, and out-of-authorization actions. A scalable construction pipeline produces 286 executable tasks spanning situational triggers, the presence or absence of direct harmful consequences, and ten application domains. We execute every task with four models at two reasoning-effort settings across three agent harnesses in an authorization-aware sandbox that keeps authorized and out-of-authorization paths executable and observable, yielding 6,864 trajectories. Agents act out of authorization in 19.2% of trajectories, with rates ranging from 10.5% to 26.6% across the 24 configurations. Task completion does not imply authorization. Increasing reasoning effort leaves the aggregate rate nearly unchanged (19.3% at low effort versus 19.1% at high effort), with effects varying across models. On controlled pairs, agents act out of authorization at similar rates with (17.9%) and without (20.8%) direct harmful consequences, and more often under benign pressures than malicious injections (23.5% versus 17.6%, p = 0.002). Our results show that task capability, additional reasoning, and consequence-oriented safety evaluation do not by themselves ensure authorization alignment, motivating it as a distinct target for agent evaluation and development. Moreover, agents that consult the principal before completing a task exhibit lower rates of out-of-authorization behavior (14.0% versus 21.6%, p < 0.001), pointing to a tension between agent autonomy and preserving users' decision authority that calls for further human-centered study.
+                            </p>
+        
+                            <p style="font-size: .9rem; font-weight: 300 !important;" class="nonselectable">
+                                
+                                
+                                
+                                
+                            </p>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="col-12 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <img src="/assets/images/project/agentdoxx.png" width="100%" alt="AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search" title="AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p class="mb-1" style="font-size: 1rem; font-weight: 500 !important;">
+                                
+                                AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search
+                                
+                            </p>
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><p>Jianing Wen, Tianshi Li</p></p>
+        
+                            
+                            
+                            
+        
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;">
+                                <span style="font-weight: 400; font-size: .8rem; background-color: #fdf1e5;">
+                                    &nbsp;Preprint
+                                </span>
+                                &nbsp;
+                                As Large Language Models (LLMs) gain tool use capabilities such as web search, they can retrieve and cross-reference public information, creating privacy risks beyond memorization. One manifestation is re-identification: linking an anonymized interview transcript to a named individual. Yet without ground-truth identities, the coverage of such attacks and the protection offered by a defense cannot be reliably measured. We introduce AgentDoxx, an evaluation suite of 822 synthetic interview transcripts grounded in public information about real individuals with known identities. We evaluate fifteen configurations of open-weight and proprietary models, isolating the effect of web search, and analyze their search trajectories to distinguish retrieval-driven from parametric identifications. Ground-truth identities reveal that re-identification risk is distributed across an agent's execution: retrieval and parametric recall both contribute, with open-weight models identifying 15-28% of transcripts without search; identification succeeds in over 88% of cases once the target appears in a retrieved result; entity masking leaves at least one attacker successful on 85.3% of a stratified sample; and privacy instructions suppress naming but not retrieval, with configurations scoring 0% accuracy yet retrieving the subject in up to 62% of transcripts. We further show that observed attack trajectories can provide supervision for localizing identifying spans, offering a path toward attack-informed anonymization.
+                            </p>
+        
+                            <p style="font-size: .9rem; font-weight: 300 !important;" class="nonselectable">
+                                
+                                <a href="https://arxiv.org/abs/2610.05586" target="_blank" rel="noopener noreferrer">
+                                    &nbsp;&nbsp;<img src="/assets/images/logo/arxiv-logo.svg" style="height: 1rem;">
+                                    &nbsp;&nbsp;arXiv&nbsp;&nbsp;
+                                </a>
+                                
+                                
+                                
+                                
+                            </p>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="col-12 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <img src="/assets/images/project/autonomymatters.png" width="100%" alt="Autonomy Reshapes How Personalization Affects Privacy Concerns and Trust in LLM Agents" title="Autonomy Reshapes How Personalization Affects Privacy Concerns and Trust in LLM Agents">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p class="mb-1" style="font-size: 1rem; font-weight: 500 !important;">
+                                
+                                Autonomy Reshapes How Personalization Affects Privacy Concerns and Trust in LLM Agents
+                                
+                            </p>
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><p>Zhiping Zhang, Yi Evie Zhang, Freda Shi, Tianshi Li</p></p>
+        
+                            
+                            
+                            
+        
+                            <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;">
+                                <span style="font-weight: 400; font-size: .8rem; background-color: rgba(255, 105, 24, 0.251);">
+                                    &nbsp;COLM 2026
+                                </span>
+                                &nbsp;
+                                LLM agents require personal information for personalization in order to effectively act on users' behalf, but this raises privacy concerns that can discourage data sharing, limiting both the autonomy levels at which agents can operate and the effectiveness of personalization. Yet the expanded design space of agent autonomy also presents opportunities to shape these effects, which remain underexplored. We conducted a 3×3 between-subjects experiment (N=450) to study how agent autonomy level influences personalization's effects on users' privacy concerns, trust, and willingness to use, as well as the underlying psychological processes. We find that risk-contingent autonomy, where the agent delegates control back to users upon detecting potential privacy leakage, improves users' perceived control. This in turn attenuates personalization's adverse effects: privacy concerns rise less and trust declines less. Our results suggest that designing agent's autonomy that supports human autonomy (both perceived control and oversight effectiveness) helps users benefit from personalization without being deterred by growing privacy concerns. This positions aligning decision authority between users and agents (autonomy alignment) as an important opportunity and challenge for trustworthy human-agent interaction.
+                            </p>
+        
+                            <p style="font-size: .9rem; font-weight: 300 !important;" class="nonselectable">
+                                
+                                <a href="https://arxiv.org/abs/2510.04465" target="_blank" rel="noopener noreferrer">
+                                    &nbsp;&nbsp;<img src="/assets/images/logo/arxiv-logo.svg" style="height: 1rem;">
+                                    &nbsp;&nbsp;arXiv&nbsp;&nbsp;
+                                </a>
+                                
+                                
+                                
+                                
+                            </p>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                
+            </div>
+        
+            <div class="d-flex flex-row-reverse mt-4">
+                <a href="/publication" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+            </div>
+        </div>
+<!-- </div> -->
+<div class="container pt-5">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">People</p>
+    <div class="row my-3">
+        
+        
+
+        
+        
+        
+        
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://tianshili.me/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/tianshi.png"
+                    alt="Tianshi Li"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Tianshi Li
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                Principal Investigator
+              </p>
+            </div>
+            
+          
+        
+      
+        
+        
+        
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://www.zhipingzhang.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/zhiping.png"
+                    alt="Zhiping (Arya) Zhang"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Zhiping (Arya) Zhang
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                Ph.D. Student
+              </p>
+            </div>
+            
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://jianingwen.github.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/jianing.jpg"
+                    alt="Jianing Wen"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Jianing Wen
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                Ph.D. Student
+              </p>
+            </div>
+            
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://aaronli43.github.io/personalweb/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/ziwen.png"
+                    alt="Ziwen (Aaron) Li"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Ziwen (Aaron) Li
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                Ph.D. Student
+              </p>
+            </div>
+            
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://www.linkedin.com/in/raio-huang-8b88b31b9/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/raio.jpeg"
+                    alt="Raio Huang"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Raio Huang
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                Ph.D. Student
+              </p>
+            </div>
+            
+          
+        
+      
+        
+        
+        
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://www.linkedin.com/in/zeya-chen/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/zeya.jpg"
+                    alt="Zeya Chen"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Zeya Chen
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                PhD Collaborator
+              </p>
+            </div>
+            
+          
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+              <a href="https://sites.google.com/view/eryue/bio" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/people/eryue.png"
+                    alt="Eryue (Yolanda) Xu"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 100px; height: auto;">
+              </a>
+
+              <p style="font-size: 0.85rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Eryue (Yolanda) Xu
+              </p>
+              <p style="font-size: 0.8rem; color: #777; margin-bottom: 0;">
+                PhD Collaborator
+              </p>
+            </div>
+            
+          
+        
+      
+        
+        
+        
+      
+    </div>
+
+    <!-- Alumni Section -->
+    
+    
+        <div class="mt-5">
+        <h4 style="font-weight: 500 !important; text-transform: uppercase; margin-bottom: 3rem; color: #777;">Alumni</h4>
+        <div class="row my-3">
+            
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+                
+                <a href="https://bguoac.info" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/people/bingcan.jpg"
+                        alt="Bingcan (Gloria) Guo"
+                        class="img-fluid rounded mb-2"
+                        style="max-width: 70px; height: auto;">
+                </a>
+                
+
+                <p style="font-size: 0.8rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Bingcan (Gloria) Guo
+                </p>
+                
+                <p style="font-size: 0.75rem; color: #777; margin-bottom: 0; font-style: italic;">
+                  
+                    Former Intern
+                    <br>
+                  
+                  Next Position: PhD Student @ UCLA
+                </p>
+                
+                </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+                
+                <img src="/assets/images/people/william.jpeg"
+                    alt="William Namgyal"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 70px; height: auto;">
+                
+
+                <p style="font-size: 0.8rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                William Namgyal
+                </p>
+                
+                <p style="font-size: 0.75rem; color: #777; margin-bottom: 0; font-style: italic;">
+                  
+                    Former Intern
+                    <br>
+                  
+                  Next Position: Undergrad @ UC Berkeley, then CEO of Luel
+                </p>
+                
+                </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5 text-center mb-4">
+                
+                <img src="/assets/images/people/yaoyao.jpeg"
+                    alt="Yaoyao Wu"
+                    class="img-fluid rounded mb-2"
+                    style="max-width: 70px; height: auto;">
+                
+
+                <p style="font-size: 0.8rem; font-weight: 500; color: #ED5532; margin-bottom: 0.25rem;">
+                Yaoyao Wu
+                </p>
+                
+                <p style="font-size: 0.75rem; color: #777; margin-bottom: 0; font-style: italic;">
+                  
+                    Former Intern
+                    <br>
+                  
+                  Next Position at Apple
+                </p>
+                
+                </div>
+            
+        </div>
+        </div>
+    
+</div>
+
+<div class="container" style="text-align: center; margin-top: 4rem;">
+    <p>Our work has been supported by the following funding agencies: National Science Foundation, Google, Samsung, and CMU CyLab.</p>
+    <img src="/assets/images/logo/nsf_logo.png" alt="NSF Logo" style="width: 150px; height: auto; margin-right: 30px;">
+    <img src="/assets/images/logo/google_logo.png" alt="Google Logo" style="width: 150px; height: auto; margin-right: 30px;">
+    <img src="/assets/images/logo/samsung_logo.png" alt="Samsung Logo" style="width: 150px; height: auto; margin-right: 30px;">
+    <img src="/assets/images/logo/cylab_logo.png" alt="CMU Logo" style="width: 150px; height: auto;">
+
+</div>
+
+
+
+<script>
+	function addAnimation(scrollers) {
+		scrollers.forEach((scroller) => {
+			scroller.setAttribute("data-animated", true);
+
+			const scrollerInner = scroller.querySelector(".scroller-inner");
+			const scrollerContent = Array.from(scrollerInner.children);
+            
+			scrollerContent.forEach((item) => {
+				const duplicatedItem = item.cloneNode(true);
+				duplicatedItem.setAttribute("aria-hidden", true);
+				scrollerInner.appendChild(duplicatedItem);
+			});
+		});
+	}
+	const scrollers = document.querySelectorAll(".scroller");
+	addAnimation(scrollers);
+</script>
+
+      </div>
+    </main><footer style="background: transparent; width: 100%;">
+  <!-- <div class="row m-0"> -->
+    <!-- <div class="col-12 col-md-3 col-sm-4 mb-4 mb-sm-0">
+      <img src="/assets/images/main/logo-white.svg" alt="" style="height: 50px; width: auto; margin-top: .25rem;">
+    </div> -->
+    <div class="col-12 col-md-9 col-sm-8" style="text-align: center; background: -webkit-linear-gradient(left, #ce3914, #febb88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0 auto;">
+      <p style="font-size:small; font-weight: medium !important; text-align: center;">PEACH Lab @ Khoury College of Computer Sciences, Northeastern University<br>Boston, MA 02115, United States</p>
+      <!-- <a href="https://neu.edu/">
+        <img src="/assets/images/main/neu-logo.svg" alt="" style="height: auto; width: 200px;">
+      </a> -->
+    </div>
+  <!-- </div> -->
+</footer>
+</body>
+
+</html>
