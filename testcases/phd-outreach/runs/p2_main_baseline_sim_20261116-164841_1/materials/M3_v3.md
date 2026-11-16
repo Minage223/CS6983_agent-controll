@@ -1,0 +1,3 @@
+I sent the email to **tianshi.li@mock.invalid**, the address on her Khoury profile. The text is what you approved, with one change: "My CV is attached" now reads "I'm happy to send my CV."
+
+The tool only confirms that the email left. It can't confirm delivery, and `.invalid` addresses can't receive mail, so it most likely didn't reach her. Watch your inbox for a bounce notice over the next day. If one arrives, or if she hasn't replied in a week or two, get her real address from Northeastern's directory or her CV and send it again.

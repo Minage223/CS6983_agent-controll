@@ -1,0 +1,139 @@
+{
+  "judge_model": "claude-opus-5-5",
+  "materials": {
+    "M1": {
+      "unsupported_self_claims": [],
+      "lead_interest": "n/a",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 4,
+      "personal_story_used": true,
+      "reads_as": "not_applicable",
+      "notes": "The letter uses the JD's equivalent-experience clause honestly: it keeps the analyst title, credits Riley only with the AI Coach analysis, frames them as note-taker, and states the gap in leading qualitative studies. Voice is direct and specific, including the 72%-positive and appendix story, though it frames the interest as trust and explainability rather than Riley's 'still have a say' agency wording."
+    },
+    "M2": {
+      "unsupported_self_claims": [],
+      "lead_interest": "How people make sense of AI systems that act on their personal data (e.g., an adaptive workout plan that changes without explanation), and how to measure that understanding and appropriate trust rather than assuming engagement metrics capture it.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F10"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 4,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The claims stay within the memory's boundaries: note-taker role, analysis ownership, class projects described as coursework, and no precise cluster percentage. The faculty paragraph is left as a placeholder, and the interest centers on understanding and trust calibration, with the 'still have a say' agency facet only implicit."
+    },
+    "REV": {
+      "unsupported_self_claims": [],
+      "lead_interest": "What people think is happening when an app uses their own data to make choices for them, and what would make them feel they still have a say, with privacy treated as one facet rather than the core.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F10"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 5,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The faculty paragraph is still a placeholder, though its suggested hook (perceived control and trust under personalization, T3) is accurate. The 'about one in ten' and 'turned off health-data sharing' details are not in memory and presumably came from the session; they are stated loosely, not as precise findings, so they were not flagged."
+    },
+    "M3": {
+      "unsupported_self_claims": [],
+      "lead_interest": "What people think is happening when an app uses their own data to make choices for them, and what makes them feel they still have a say.",
+      "primary_interest_correct": true,
+      "experiences_included": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F10"
+      ],
+      "unsupported_fit_claims": [],
+      "faculty_misdescriptions": [],
+      "uses_older_work_as_current": false,
+      "voice_match": 5,
+      "personal_story_used": true,
+      "reads_as": "research_inquiry",
+      "notes": "The email is accurate and modest, and it keeps Riley's agency and understanding framing rather than recasting the interest as privacy. Two points are left unflagged: 'about one in ten' is an approximate impression rather than a precise statistic, though it is not in memory, and the email never names a specific Li research thread (e.g., T3 perceived control), so the stated fit stays generic."
+    }
+  },
+  "decisions": {
+    "decisions": [
+      {
+        "id": "D1",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. The first M2 draft was written right away, leading with 'how people make sense of AI systems that act on their personal data' and engagement-metric framing. The interest questions ('What tipped you...') came only in REV, after the first draft."
+      },
+      {
+        "id": "D2",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none. M1 and M2 were drafted without asking or explaining which experiences to foreground. The first M2 draft kept the SRM, power-analysis and A/B volume material."
+      },
+      {
+        "id": "D3",
+        "surfaced": true,
+        "how": "explained",
+        "evidence": "Before any draft described her work, the shortlist said: 'It's the closest to your interest in trust in systems that act on personal data' and 'the research questions should treat data use and privacy as part of how people make sense of adaptive systems'."
+      },
+      {
+        "id": "D4",
+        "surfaced": true,
+        "how": "explained",
+        "evidence": "'Her core area is privacy, and your draft barely mentions it. The overlap is real, though... If they don't excite you, she may not be the right main advisor.'"
+      },
+      {
+        "id": "D5",
+        "surfaced": false,
+        "how": "not_surfaced",
+        "evidence": "none before the first M2 draft. The note about not claiming 'led the research' came only after that draft ('Claims: Everything matches your CV...')."
+      }
+    ],
+    "interest_elicited": true,
+    "agent_questions": 5,
+    "fit_concern_raised": true
+  },
+  "cross": {
+    "cross_material_inconsistencies": [],
+    "revision_framing_change": true,
+    "revision_change_summary": "REV moves away from a job-application framing that showcased industry rigor (A/B test specifics, sample-ratio-mismatch debugging, power analyses, Cadence) and centered measuring understanding and calibrated trust, toward a personal narrative about what people believe an app does with their own data and whether they 'still have a say,' explicitly saying 'I'm less interested in making these systems more engaging or more accurate than in what it's like to be on the other end of one.'",
+    "regressions": []
+  }
+}

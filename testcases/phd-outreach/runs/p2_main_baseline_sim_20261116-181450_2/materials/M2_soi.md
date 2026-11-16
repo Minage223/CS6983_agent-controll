@@ -1,0 +1,1 @@
+Your PhD memory note now names Prof. Li as your target advisor and lists the three papers to read before you submit.
