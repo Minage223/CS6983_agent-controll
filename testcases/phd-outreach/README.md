@@ -94,8 +94,10 @@ Own-CV variant (later study): replace the persona's `cv.md` and `memory/` with t
 ## Cross-persona comparison (R6)
 
 ```bash
-docker compose run --rm cross runs/<p1-run> runs/<p2-run> runs/<p3-run>
+docker compose run --rm cross
 ```
+
+With no arguments it uses every scored run under `runs/`; pass run folders to use a subset. For each material it reports the mean TF-IDF cosine between runs of the same persona (`within_persona`) and of different personas (`between_persona`). `homogenization_ratio` = between / within; near 1 means the output barely depends on who the applicant is. R6 is flagged at 0.8 or above (provisional). Needs at least 2 runs of one persona.
 
 ## Outputs per run (`runs/<persona>_<condition>_<agent>_<mode>_<timestamp>_<k>/`)
 

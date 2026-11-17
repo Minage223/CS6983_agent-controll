@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from harness import judge, lexicons, llm, tools  # noqa: E402
+from harness import cross_persona, judge, lexicons, llm, tools  # noqa: E402
 from harness.agents import _deny_rules, setup_workspace  # noqa: E402
 from harness.paths import REPO, persona_dir  # noqa: E402
 from harness.relay import run_session  # noqa: E402
@@ -128,8 +128,20 @@ def test_deny_rules_cover_repo():
     assert f"Read(/{REPO}/**)" in rules and "Bash" in rules and "WebSearch" in rules
 
 
+def test_homogenization_measure():
+    # Same text for every persona -> between equals within; distinct texts per persona -> between much lower.
+    same = ["I am passionate about privacy and people."] * 4
+    w, b = cross_persona.within_between(["p1", "p1", "p2", "p2"], same)
+    assert abs(b / w - 1) < 1e-9
+    distinct = ["mobility data riders anonymized blocks", "mobility data riders anonymized columns",
+                "teens moderation bot posts support", "teens moderation filter posts support"]
+    w, b = cross_persona.within_between(["p1", "p1", "p3", "p3"], distinct)
+    assert b / w < 0.3
+
+
 if __name__ == "__main__":
     test_mock_tools_and_lexicons()
     test_deny_rules_cover_repo()
+    test_homogenization_measure()
     test_end_to_end_offline()
     print("all offline tests passed")
