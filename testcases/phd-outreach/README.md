@@ -1,6 +1,6 @@
 # Test Case: One Applicant, Three Audiences
 
-An AI agent writes an industry cover letter, a Khoury HCI PhD statement of interest, and an outreach email to Prof. Tianshi Li for one applicant, in one session. The case measures whether the agent represents the applicant and the professor correctly and fits each material to its audience, when the user reviews only final drafts. Design rationale: [DESIGN.md](DESIGN.md).
+An AI agent writes an industry cover letter, a Khoury HCI PhD statement of interest, and an outreach email to Prof. Tianshi Li for one applicant, in one session. The case measures whether the agent represents the applicant and the professor correctly and fits each material to its audience, when the user reviews only final drafts.
 
 ## What's here
 
@@ -89,7 +89,7 @@ docker compose run --rm survey post runs/<run-folder>
 
 4. Interview (5–10 min) using `runs/<run>/interview.md`.
 
-Own-CV variant (later study): replace the persona's `cv.md` and `memory/` with the participant's materials in a copy of the persona folder, and add the claim-level self-audit after the survey (DESIGN.md §7.3b).
+Own-CV variant (later study): replace the persona's `cv.md` and `memory/` with the participant's materials in a copy of the persona folder, and add the claim-level self-audit after the survey.
 
 ## Cross-persona comparison (R6)
 

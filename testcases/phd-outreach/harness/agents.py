@@ -3,7 +3,7 @@
 BaselineAgent: Claude Code (via the Claude Agent SDK) with the applicant's memory and the mock tools.
 No instructions beyond what a consumer Claude Code session would have; the user approves final drafts only.
 
-ProposedAgent: placeholder for the Personal Memo Agent (DESIGN.md §11). Same environment and tools.
+ProposedAgent: placeholder for the Personal Memo Agent. Same environment and tools.
 """
 from __future__ import annotations
 
@@ -142,12 +142,12 @@ class BaselineAgent:
 
 
 class ProposedAgent(BaselineAgent):
-    """Personal Memo Agent. Not implemented yet: see DESIGN.md §11 for the intended checkpoint flow."""
+    """Personal Memo Agent. Not implemented yet."""
 
     name = "proposed"
 
     def __init__(self, *a, **kw):
-        raise NotImplementedError("Proposed agent is not built yet (DESIGN.md §11).")
+        raise NotImplementedError("Proposed agent is not built yet.")
 
 
 AGENTS = {"baseline": BaselineAgent, "proposed": ProposedAgent}

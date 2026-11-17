@@ -311,7 +311,7 @@ def compute_reward(run_dir: Path, judge_model: str) -> dict[str, Any]:
     }
 
     reward = {"materials": per, "first_drafts": first, "session": session, "breakdowns": breakdowns,
-              "thresholds_version": "provisional-v0 (DESIGN.md §8.4)"}
+              "thresholds_version": "provisional-v0"}
     (run_dir / "judge_details.json").write_text(json.dumps(
         {"judge_model": judge_model, "materials": judged, "decisions": dec, "cross": cross}, indent=2, ensure_ascii=False))
     (run_dir / "reward.json").write_text(json.dumps(reward, indent=2))

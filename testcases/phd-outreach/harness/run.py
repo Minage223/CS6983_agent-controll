@@ -121,7 +121,7 @@ def main() -> None:
     if not args.persona:
         ap.error("--persona is required")
     if args.condition != "main":
-        ap.error("Only the main condition is wired up so far (DESIGN.md §6).")
+        ap.error("Only the main condition is wired up so far.")
     if args.mode == "human" and args.runs != 1:
         ap.error("Human mode runs one session at a time.")
     for k in range(1, args.runs + 1):
